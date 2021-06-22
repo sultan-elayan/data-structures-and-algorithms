@@ -59,20 +59,14 @@ For example, twoToThe([1,2,3]) returns [2,4,8] because 2 ^ 1 = 2, 2 ^ 2 = 4, and
 ------------------------------------------------------------------------------------------------ */
 
 const forLoopTwoToThe = (arr) => {
-  let newArry=[];
 
- for (let i = 0; i < arr.length; i++) {
-   let  element =  
-   
-   arr.forEach(num =>{
-     newArry.push(num *num)
-   })
-   ;
-   newArry.push(element);
- }
-
-  return newArry;
- 
+  let newArr4=[]
+  for (let i = 0; i < arr.length; i++) {
+  
+    newArr4.push(Math.pow(2, arr[i])) 
+  }
+  return newArr4;
+  
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -82,9 +76,13 @@ Write a function named forEachTwoToThe that produces the same output as your for
 ------------------------------------------------------------------------------------------------ */
 
 const forEachTwoToThe = (arr) => {
-  // Solution code here...
+  
+  let newArr5=[];
+  arr.forEach(value=>{
+    newArr5.push(Math.pow(2, value))
+  })
+  return newArr5
 };
-
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 6
 
@@ -92,9 +90,12 @@ Write a function named mapTwoToThe that produces the same output as your forLoop
 ------------------------------------------------------------------------------------------------ */
 
 const mapTwoToThe = (arr) => {
-  // Solution code here...
-};
 
+  let newArr6=arr.map(value=>{
+    return Math.pow(2, value)
+  })
+  return newArr6;
+};
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 7 - Stretch Goal
 
@@ -106,8 +107,13 @@ For example: charCode(['h','i']) returns [104, 105].
 ------------------------------------------------------------------------------------------------ */
 
 const charCode = (arr) => {
-  // Solution code here...
+ 
+  let newArr7=arr.map(value=>{
+    return value.charCodeAt()
+  })
+  return newArr7;
 };
+
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 8 - Stretch Goal
