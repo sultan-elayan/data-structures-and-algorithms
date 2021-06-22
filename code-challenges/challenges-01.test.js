@@ -68,31 +68,17 @@ Use `forEach` to build a new array of strings, each string modified by the callb
 ------------------------------------------------------------------------------------------------ */
 
 const greeting = (word) => {
-  let newallUpperCase = [];
-  word.forEach(words => {
-    newallUpperCase.push(words.toUpperCase() + '!');
-  
-  });
-  return newallUpperCase;
-
+  // Solution code here...
+ let newWord =word.toUpperCase()+'!';
+ return newWord;
 };
-
-
+let newArr3=[];
 const speaker = (words, callback) => {
-  let newspeaker = [];
-
-  clfun = (words)=>{
-    
-
-    words.forEach(words1 => {
-      newspeaker.push(words1.toUpperCase() + '!');
-    
-    });
-
-    clfun();
-    return words;
-
-  }
+  // Solution code here...
+  words.forEach(words=>{
+    newArr3.push(callback(words))
+  })
+return newArr3;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -110,15 +96,19 @@ Within the addNumbers function, invoke the callback function as many times as ne
 
 Return the modified array.
 ------------------------------------------------------------------------------------------------ */
-
 const addValues = (arr, value) => {
   // Solution code here...
+  arr.push(value);
 };
 
 const addNumbers = (num, arr, times, callback) => {
   // Solution code here...
+for (let i=0 ;i<times ;i++){
+callback(arr,num);
+}
+  
+return arr;
 };
-
 /* ------------------------------------------------------------------------------------------------
 
 CHALLENGE 6
@@ -138,7 +128,13 @@ This function should use forEach to populate your grocery list based on the stor
 ------------------------------------------------------------------------------------------------ */
 
 const createList = (availableItems) => {
-  // Solution code here...
+  let newArr6=[];
+  availableItems.forEach(value=>{
+    if (value.available===true) {
+      newArr6.push(value.name);
+    }
+  });
+  return newArr6;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -154,7 +150,6 @@ Iterate over the array using forEach to determine the output based on several ru
 
 Return the resulting output array.
 ------------------------------------------------------------------------------------------------ */
-
 const fizzbuzz = (arr) => {
   // Solution code here...
 };
