@@ -13,3 +13,10 @@ Each day, you'll add one new file to this folder to do your work for the day's a
 ### 401 Data Structures, Code Challenges
 
 - Please follow the instructions specific to your 401 language, which can be found in the directory below, matching your course.
+
+Table Of Content 
+
+| Class      | Repo Root |
+| ----------------| ----------- |
+| Class-01        | [README.Class-01](https://github.com/sultan-elayan/data-structures-and-algorithms/blob/master/401-Code/Class-01/README.md)       |
+| Class-02    | Text        |

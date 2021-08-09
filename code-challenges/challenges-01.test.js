@@ -29,16 +29,19 @@ Use `forEach` to loop over the input array. Modify each string, and add the upda
 ------------------------------------------------------------------------------------------------ */
 
 const addExclamation = (arr) => {
- let newaddExclamation = [];
- arr.forEach(word => {
-   newaddExclamation.push(word + '!');
+let nArry =[];
 
-   
- });
+arr.forEach(element => {
 
- return newaddExclamation;
+  nArry.push(element+'!')
 
+  
+});
+return nArry
 };
+
+
+
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 3
@@ -49,13 +52,18 @@ Use `forEach` to loop over the input array. The modified strings should each be 
 ------------------------------------------------------------------------------------------------ */
 
 const allUpperCase = (arr) => {
-let newallUpperCase = [];
-arr.forEach(word => {
-  newallUpperCase.push(word.toUpperCase());
 
-});
-return newallUpperCase
-};
+
+let nArry= [];
+
+arr.forEach(item =>{
+  
+  nArry.push((item.toUpperCase()))
+
+})
+return nArry
+}
+
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 4
