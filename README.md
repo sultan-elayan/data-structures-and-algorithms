@@ -19,4 +19,4 @@ Table Of Content
 | Class      | Repo Root |
 | ----------------| ----------- |
 | Class-01        | [README.Class-01](https://github.com/sultan-elayan/data-structures-and-algorithms/blob/master/401-Code/Class-01/README.md)       |
-| Class-02    | Text        |
+| Class-02    | [README.Class-02](https://github.com/sultan-elayan/data-structures-and-algorithms/blob/master/401-Code/Class-02/README.md)      |
