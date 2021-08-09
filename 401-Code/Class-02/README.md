@@ -3,7 +3,7 @@
 
 ## Whiteboard Process
 
-![](401-Code/img/array-reverse.jpeg)
+![]()
 
 ## Approach & Efficiency
 > - 2 hours 
