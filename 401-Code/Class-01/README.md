@@ -3,7 +3,7 @@
 
 ## Whiteboard Process 
 
-![](../img/array-reverse.jpeg)
+![](../img/array-reversenew.jpeg)
 
 
 ## Approach & Efficiency
