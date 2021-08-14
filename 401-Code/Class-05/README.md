@@ -11,7 +11,7 @@ we learned about LL and how to deal with by classes and how set the default's va
 i used the singly linked list method
 
 
-### Solar System Exploration, 1950s – 1960s
+### The test results 
 
 - [x] Can successfully instantiate an empty linked list
 - [x] Can properly insert into the linked list
