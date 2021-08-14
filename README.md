@@ -20,7 +20,6 @@ Table Of Content
 | ----------------| ----------- |
 | Class-01        | [README.Class-01](https://github.com/sultan-elayan/data-structures-and-algorithms/blob/master/401-Code/Class-01/README.md)       |
 | Class-02    | [README.Class-02](https://github.com/sultan-elayan/data-structures-and-algorithms/blob/master/401-Code/Class-02/README.md)      |
-<<<<<<< HEAD
 | Class-03    | [README.Class-03](https://github.com/sultan-elayan/data-structures-and-algorithms/blob/array-binary-search/401-Code/class-03/README.md)      |
 | Class-04    | INTERVIEW|
-| Class-05    | INTERVIEW|
+| Class-05    | https://github.com/sultan-elayan/data-structures-and-algorithms/blob/master/401-Code/Class-05/README.md|
