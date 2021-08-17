@@ -21,8 +21,8 @@ Table Of Content
 | Class-01        | [README.Class-01](https://github.com/sultan-elayan/data-structures-and-algorithms/blob/master/401-Code/Class-01/README.md)       |
 | Class-02    | [README.Class-02](https://github.com/sultan-elayan/data-structures-and-algorithms/blob/master/401-Code/Class-02/README.md)      |
 | Class-03    | [README.Class-03](https://github.com/sultan-elayan/data-structures-and-algorithms/blob/array-binary-search/401-Code/class-03/README.md)      |
-| Class-04    | [README.Class-04](https://github.com/sultan-elayan/data-structures-and-algorithms/blob/master/401-Code/Class-05/README.md)|
+| Class-04    | [README.Class-04](https://github.com/sultan-elayan/data-structures-and-algorithms/blob/master/401-Code/Class-04/README.md)|
 | Class-05    | [README.Class-05](https://github.com/sultan-elayan/data-structures-and-algorithms/blob/master/401-Code/Class-05/README.md)|
-| Class-06    | [README.Class-06](https://github.com/sultan-elayan/data-structures-and-algorithms/blob/master/401-Code/Class-05/README.md)|
-| Class-07    | [README.Class-07](https://github.com/sultan-elayan/data-structures-and-algorithms/blob/master/401-Code/Class-05/README.md)|
-| Class-08    | [README.Class-08](https://github.com/sultan-elayan/data-structures-and-algorithms/blob/master/401-Code/Class-05/README.md)|
+| Class-06    | [README.Class-06](https://github.com/sultan-elayan/data-structures-and-algorithms/blob/master/401-Code/Class-06/README.md)|
+| Class-07    | [README.Class-07](https://github.com/sultan-elayan/data-structures-and-algorithms/blob/master/401-Code/Class-07/README.md)|
+| Class-08    | [README.Class-08](https://github.com/sultan-elayan/data-structures-and-algorithms/blob/master/401-Code/Class-08/README.md)|
