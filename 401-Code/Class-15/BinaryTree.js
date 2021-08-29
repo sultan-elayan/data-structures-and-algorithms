@@ -1,59 +1,45 @@
-"use strict";
+'use strict';
 
 class BinaryTree {
-  constructor(node = null) {
-    this.root = node;
-  }
-
-  preOrder() {
-    // root - left - right
-    let str = "";
-    function preOrderTraverse(node) {
-      str = `${str}${node.value} > `;
-      if (node.left) {
-        preOrderTraverse(node.left);
-      }
-      if (node.right) {
-        preOrderTraverse(node.right);
-      }
-    }
-    preOrderTraverse(this.root);
-    return str;
-  }
-
-  inOrder() {
-    //  left - root - right
-    let str = "";
-    function inOrderTraverse(node) {
-      if (node.left) {
-        inOrderTraverse(node.left);
-      }
-      str = `${str}${node.value} > `;
-      if (node.right) {
-        inOrderTraverse(node.right);
-      }
+    constructor(root=null) {
+        this.root = root;
     }
 
-    inOrderTraverse(this.root);
-    return str;
-  }
-
-  postOrder() {
-    //  left - right - root
-    let str = "";
-    function inOrderTraverse(node) {
-      if (node.left) {
-        inOrderTraverse(node.left);
-      }
-      if (node.right) {
-        inOrderTraverse(node.right);
-      }
-      str = `${str}${node.value} > `;
+   
+    preOrder() {
+        let result = [];
+        let traverse = (node) => {
+            result.push(node.value);
+            if (node.left) traverse(node.left);
+            if (node.right) traverse(node.right);
+        }
+        traverse(this.root);
+        return result;
     }
 
-    inOrderTraverse(this.root);
-    return str;
-  }
+
+    inOrder() {
+        let result = [];
+        let traverse = (node) => {
+            if (node.left) traverse(node.left);
+            result.push(node.value);
+            if (node.right) traverse(node.right);
+        }
+        traverse(this.root);
+        return result;
+    }
+
+   
+    postOrder() {
+        let result = [];
+        let traverse = (node) => {
+            if (node.left) traverse(node.left);
+            if (node.right) traverse(node.right);
+            result.push(node.value);
+        }
+        traverse(this.root);
+        return result;
+    }
 }
 
 module.exports = BinaryTree;

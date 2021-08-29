@@ -1,93 +1,58 @@
-"use strict";
-const BinaryTree = require("../BinaryTree");
-const Node = require("../node");
-describe("Binary Tree Tests ", () => {
-  it("1.Can successfully instantiate an empty tree", () => {
-    let binaryTree = new BinaryTree();
-    expect(binaryTree.root).toBe(null);
-  });
+'use strict';
 
-  it("2.Can successfully instantiate a tree with a single root node", () => {
-    let node = new Node("A");
-    let binaryTree = new BinaryTree(node);
-    expect(binaryTree.root.value).toBe("A");
-    expect(binaryTree.root.left).toBe(null);
-    expect(binaryTree.root.right).toBe(null);
-  });
 
-  it("3.Can successfully add a left child and right child to a single root node", () => {
-    let node = new Node("A");
-    node.left = new Node("B");
-    node.right = new Node("C");
+const BinaryTree = require('../BinaryTree');
+const Node = require('../node');
+let tree = null;
 
-    let binaryTree = new BinaryTree(node);
-    expect(binaryTree.root.value).toBe("A");
-    expect(binaryTree.root.left.value).toBe("B");
-    expect(binaryTree.root.right.value).toBe("C");
-    expect(binaryTree.root.left.left).toBe(null);
-    expect(binaryTree.root.left.right).toBe(null);
-    expect(binaryTree.root.right.left).toBe(null);
-    expect(binaryTree.root.right.right).toBe(null);
-  });
-});
+describe('Binary Tree', ()=>{
 
-describe("Depth First Search methods tests", () => {
-  let binaryTree;
-  beforeAll(() => {
-    let one = new Node("A");
-    let two = new Node("B");
-    let three = new Node("C");
-    let four = new Node("D");
-    let five = new Node("E");
-    let six = new Node("F");
-    let seven = new Node("G");
-    let eight = new Node("H");
-    let nine = new Node("I");
-    let ten = new Node("J");
-    let eleven = new Node("K");
-    let twelve = new Node("L");
-    let thirteen = new Node("M");
+    beforeAll(()=> {
+        let one = new Node(1);
+        let two = new Node(2);
+        let three = new Node(3);
+        let four = new Node(4);
+        let five = new Node(5);
+        let six = new Node(6);
+        let seven = new Node(7);
+        let eight = new Node(8);
+        let nine = new Node(9);
 
-    one.left = two;
-    one.right = three;
-    two.left = four;
-    two.right = five;
-    four.left = six;
-    four.right = seven;
-    seven.right = eight;
+        one.left = two;
+        one.right = three;
+        two.left = six;
+        six.right = seven;
+        seven.left = eight;
+        seven.right = nine;
+        three.left = four;
+        three.right = five;
 
-    three.left = nine;
-    three.right = ten;
-    nine.left = eleven;
-    nine.right = twelve;
-    eleven.left = thirteen;
+        // create a tree and pass root to it
+        tree = new BinaryTree(one);
+    });
 
-    binaryTree = new BinaryTree(one);
-  });
-  it("4.Can successfully return a collection from a pre order traversal", () => {
-    let expectedResults =
-      "A > B > D > F > G > H > E > C > I > K > M > L > J > ";
-    expect(binaryTree.root.value).toBe("A");
-    expect(binaryTree.root.left.value).toBe("B");
-    expect(binaryTree.root.right.value).toBe("C");
-    expect(binaryTree.preOrder()).toBe(expectedResults);
-  });
+    it('constructor', ()=>{
+        const newTree = new BinaryTree();
+        expect(newTree.root).toBeNull();
+        expect(tree.root.value).toEqual(1);
+    });
 
-  it("5.Can successfully return a collection from a in order traversal", () => {
-    let expectedResults =
-      "F > D > G > H > B > E > A > M > K > I > L > C > J > ";
-    expect(binaryTree.root.value).toBe("A");
-    expect(binaryTree.root.left.value).toBe("B");
-    expect(binaryTree.root.right.value).toBe("C");
-    expect(binaryTree.inOrder()).toBe(expectedResults);
-  });
+    it('preOrder', ()=> {
+        let expectedOutput = [1,2,6,7,8,9,3,4,5];
+        let preOrder = tree.preOrder();
+        expect(preOrder).toEqual(expectedOutput);
+    });
 
-  it("6.Can successfully return a collection from a post order traversal", () => {
-    let expectedResults =
-      "F > H > G > D > E > B > M > K > L > I > J > C > A > ";
-    expect(binaryTree.root.value).toBe("A");
-    expect(binaryTree.root.left.value).toBe("B");
-    expect(binaryTree.root.right.value).toBe("C");
-    expect(binaryTree.postOrder()).toBe(expectedResults);
-  });
+    it('inOrder', ()=> {
+        let expectedOutput = [6, 8, 7, 9, 2, 1, 4, 3, 5];
+        let inOrder = tree.inOrder();
+        expect(inOrder).toEqual(expectedOutput);
+    });
+
+    it('postOrder', ()=> {
+        let expectedOutput = [8, 9, 7, 6, 2, 4, 5, 3, 1];
+        let postOrder = tree.postOrder();
+        expect(postOrder).toEqual(expectedOutput);
+    });
+
 });
