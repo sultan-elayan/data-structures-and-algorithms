@@ -6,9 +6,6 @@ class BinarySearch{
     constructor(root=null){
         this.root=root
     }
-
-
-
     add(value) {
         let node = new Node(value);
         if(!this.root){

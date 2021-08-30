@@ -51,7 +51,7 @@ describe("Binary Search Tree Tests ", () => {
   it("4.Can successfully create the whole tree using add method", () => {
     let expectedResults =
       "50 > 35 > 29 > 10 > 31 > 33 > 42 > 65 > 58 > 55 > 52 > 60 > 100 > ";
-    //   "A > B > D > F > G > H > E > C > I > K > M > L > J > ";
+    
     expect(binarySearchTree.root.value).toBe(50);
     expect(binarySearchTree.root.left.value).toBe(35);
     expect(binarySearchTree.root.right.value).toBe(65);
