@@ -1,4 +1,4 @@
-# tree-breadth-first
+# tree-fizz-buzz
 
 > - we need to write a function to Determine whether or not the value of each node is divisible by 3, 5 or both.
 
