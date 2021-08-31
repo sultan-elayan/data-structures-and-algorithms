@@ -6,7 +6,7 @@ let breadthFirst = (tree) => {
     if (!tree.root) return 'Tree is empty!'; 
 
     let queue = [];
-    let tree = []; 
+    let result = []; 
 
     queue.push(tree.root); 
 
@@ -14,7 +14,7 @@ let breadthFirst = (tree) => {
 
         let frontNode = queue.shift(); 
 
-        tree.push(frontNode.value);
+        result.push(frontNode.value);
 
         if (frontNode.left) { 
             queue.push(frontNode.left); 
@@ -23,7 +23,7 @@ let breadthFirst = (tree) => {
             queue.push(frontNode.right); 
         }
     }
-    return tree; 
+    return result; 
 }
 
 
