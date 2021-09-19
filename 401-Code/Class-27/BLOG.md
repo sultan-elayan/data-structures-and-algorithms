@@ -1,4 +1,4 @@
-# Insertion Sort
+# Merge Sort
 
 > ### We need to write a function to sort the array values by using merge Sort method 
 
