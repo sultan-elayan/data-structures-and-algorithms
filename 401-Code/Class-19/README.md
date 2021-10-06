@@ -1,4 +1,4 @@
-# tree-fizz-buzz
+# trees are identical
 
 > - we need to write a function to check if two trees are identical
 
